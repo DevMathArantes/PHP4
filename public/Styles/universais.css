@@ -1,0 +1,45 @@
+.titulo{
+    color: var(--c5);
+    padding: 1em;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.centralizar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.blocoField{
+    color: var(--c2);
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+    background-color: var(--c1);
+    width: 20em;
+}
+.blocoField input{
+    background-color: var(--c1);
+    border: 0;
+    color: var(--c5);
+    width: 100%;
+    padding: 0.5em;
+}
+.blocoField select{
+    width: 100%;
+    text-align: center;
+    background-color: var(--c1);
+    border: 0;
+    color: var(--c5);
+    font-size: 1.2rem;
+}
+.btnEnviar{
+    width: 17em;
+    background-color: var(--c4);
+    color: var(--c5);
+    padding: 0.5em;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 0;
+}

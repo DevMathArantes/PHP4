@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="centralizar">
+        <h1 class="titulo">Exportador do ScreenMatch</h1>
+
+        <!--
+            A tag form="X" serve para o formulário enviar os dados para o arquivo X 
+            A tag method="X" serve para mostrar o método de envio (post para dados ficarem invisíveis na URL e get para
+            dados visíveis na URL)
+        -->
+        <form class="centralizar" action="exportaArquivo.php" method="post">
+            <fieldset class="blocoField">
+                <legend>Nome</legend>
+                <input type="text" name="nome" id="nome" required>
+            </fieldset>
+
+            <fieldset class="blocoField">
+                <legend>Ano</legend>
+                <input type="year" name="ano" id="ano" required>
+            </fieldset>
+
+            <fieldset class="blocoField">
+                <legend>Nota</legend>
+                <input type="number" name="nota" id="nota" required step="0.1">
+            </fieldset>
+
+            <fieldset class="blocoField">
+                <legend>Gênero</legend>
+                <select name="genero" id="genero">
+                    <option value="super-heroi">Super-herói</option>
+                    <option value="comedia">Comédia</option>
+                    <option value="acao">Ação</option>
+                </select>
+            </fieldset>
+
+            <br>
+            <input class="btnEnviar" type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
