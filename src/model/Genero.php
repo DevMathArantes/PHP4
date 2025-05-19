@@ -1,5 +1,7 @@
 <?php
 
+    namespace Src\Modelo;
+
     /*
         Estrutura enum:
         enum X : Z{

@@ -1,6 +1,10 @@
 <?php 
 
-    class Titulo{
+    //O comando namespace serve para diferenciar arquivos de mesmo nome
+    namespace Src\Modelo;
+
+    //Quando uma classe não pode ser diretamente  instanciada, ela é abstrata (abstract proibe a instância)
+    abstract class Titulo implements Avaliado{
 
         /*
             A visibilidade public faz com que a variável seja acessivel em outros arquivos
@@ -8,11 +12,7 @@
             A visibilidade private faz com que a variável só possa ser acessada no arquivo onde foi declarada
 
             A visibilidade protected faz com que a variável possa ser acessada normalmente pelas classes filhas
-        */
 
-        private array $notas;
-
-        /*
             Método construtor:
             public function __construct(private $N1, private $N2..., private $Nn){
             }
@@ -22,6 +22,9 @@
 
             A única função que pode criar atributos através dos parâmetros é o método __construct()
         */
+
+        //O comando use funciona para trazer o conteúdo de uma trait (quando estiver dentro de uma classe) 
+        use ComNota;
 
         public function __construct(
 
@@ -34,30 +37,19 @@
             public readonly string $nome, 
             public readonly int $ano, 
             public readonly Genero $genero,){
-
-            //O comando $this->X referência o atributo X do objeto
-            $this->notas = [];
         }
 
-        public function receberNota(float $nota): void{
-            
-            //O comando $this->X referência o atributo X do objeto
-            $this->notas[] = $nota;
-        }
 
-        public function calcularMedia() : float{
-            $notas = $this->notas;
-            $totalNotas = array_sum($notas);
-            return  array_sum($notas)/count($notas);
-        }
 
         /*
             O polimorfismo é possivel através da herança, pois todo objeto pode se comportar tanto como sendo da classe
             filha como sendo da classe pai, por exemplo ao sobreescrever um método em 1 classe pai e 2 classes filhas, o
             método vai se comportar de acordo com o objeto chamado.
+
+            
+            O atributo abstract faz com que um método de mesmo nome precise obrigatoriamente ser implementado em classes 
+            filhas
         */
-        public function tempoTotal() : int{
-            return 0; 
-        }
+        abstract public function tempoTotal() : int;
 
     }

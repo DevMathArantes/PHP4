@@ -1,10 +1,22 @@
 <?php 
 
-    require __DIR__ . "/model/Titulo.php";
-    require __DIR__ . "/model/Filme.php";
-    require __DIR__ . "/model/Serie.php";
+    require __DIR__ . "/model/ComNota.php";
+    require __DIR__ . "/model/Avaliado.php";
     require __DIR__ . "/model/Genero.php";
+    require __DIR__ . "/model/Titulo.php";
+    require __DIR__ . "/model/Episodio.php";
+    require __DIR__ . "/model/Serie.php";
+    require __DIR__ . "/model/Filme.php";
     require __DIR__ . "/math/CalcMaratona.php";
+    require __DIR__ . "/math/MontarEstrela.php";
+
+    //O comando use X{Y} serve para trazer os namespaces dentro de {}
+    use Src\Modelo\{
+        Titulo, Filme, Serie, Genero, Episodio, Avaliado, ComNota
+    };
+    use Src\Math\{
+        CalcMaratona, MontarEstrela
+    };
 
     //Para atribuir valor a um enum, use X::Y para atribuir Y ao enum X
     $filme1 = new Filme("Star Wars: Ameaça Fantasma", 1999, Genero::Ficcao, 136);
@@ -40,4 +52,10 @@
     $calculadora->addMaratona($filme2);
     $calculadora->addMaratona($filme3);
     $calculadora->addMaratona($serie1);
-    echo "\nVocê vai maratonar por " . $calculadora->maratona() . " minutos\n";
+    echo "Você vai maratonar por " . $calculadora->maratona() . " minutos\n\n";
+
+    $episodio= new Episodio($serie1, "Parte 1", 1);
+
+    $montarEstrela1 = new MontarEstrela();
+    echo "\nO filme Star Wars: A Vingança dos Sith possui " . $montarEstrela1->converter($filme3) . " estrelas\n";
+    echo "\nA série Obi-Wan Kenobi possui " . $montarEstrela1->converter($serie1) . " estrelas\n";

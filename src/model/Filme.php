@@ -1,5 +1,7 @@
 <?php
 
+    namespace Src\Modelo;
+
     /*
         O comando:
         class X {
