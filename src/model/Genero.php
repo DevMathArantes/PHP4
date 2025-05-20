@@ -1,6 +1,6 @@
 <?php
 
-    namespace Src\Modelo;
+    namespace src\model;
 
     /*
         Estrutura enum:

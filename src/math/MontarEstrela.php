@@ -1,9 +1,9 @@
 <?php
 
-    namespace Src\Math;
+    namespace src\math;
 
     //O comando use pode servir para mostrar o namespace correto, ele pode receber apelidos com o comando as
-    use \Src\Modelo\Avaliado as Ava;
+    use \src\model\Avaliado as Ava;
 
     class MontarEstrela{
 

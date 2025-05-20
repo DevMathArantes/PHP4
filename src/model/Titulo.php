@@ -1,8 +1,8 @@
 <?php 
 
     //O comando namespace serve para diferenciar arquivos de mesmo nome
-    namespace Src\Modelo;
-
+    namespace src\model;
+    
     //Quando uma classe não pode ser diretamente  instanciada, ela é abstrata (abstract proibe a instância)
     abstract class Titulo implements Avaliado{
 

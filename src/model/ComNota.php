@@ -1,6 +1,6 @@
 <?php
 
-    namespace Src\Modelo;
+    namespace src\model;
 
     //O comando trait é usado para criar uma trait (não pode ser utilizado como tipo)
     trait ComNota{

@@ -1,6 +1,6 @@
 <?php
 
-    namespace Src\Modelo;
+     namespace src\model;
 
     //Para uma classe X receber herança de uma classe Y, utiliza-se: class X extends Y{...}
     class Serie extends Titulo{

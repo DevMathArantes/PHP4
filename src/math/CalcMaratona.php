@@ -1,9 +1,9 @@
 <?php
 
-    namespace Src\Math;
+    namespace src\math;
 
     //Fora de uma classe, o comando use serve para usar um namespace
-    use Src\Modelo\Titulo;
+    use src\model\Titulo;
 
     class CalcMaratona{
 

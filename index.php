@@ -1,20 +1,12 @@
 <?php 
 
-    require __DIR__ . "/model/ComNota.php";
-    require __DIR__ . "/model/Avaliado.php";
-    require __DIR__ . "/model/Genero.php";
-    require __DIR__ . "/model/Titulo.php";
-    require __DIR__ . "/model/Episodio.php";
-    require __DIR__ . "/model/Serie.php";
-    require __DIR__ . "/model/Filme.php";
-    require __DIR__ . "/math/CalcMaratona.php";
-    require __DIR__ . "/math/MontarEstrela.php";
+    require 'autoload.php';
 
     //O comando use X{Y} serve para trazer os namespaces dentro de {}
-    use Src\Modelo\{
+    use src\model\{
         Titulo, Filme, Serie, Genero, Episodio, Avaliado, ComNota
     };
-    use Src\Math\{
+    use src\math\{
         CalcMaratona, MontarEstrela
     };
 

@@ -1,6 +1,6 @@
 <?php
 
-    namespace Src\Modelo;
+    namespace src\model;
 
     //O comando X implements Y implementa uma interface Y a uma classe X 
     class Episodio implements Avaliado{

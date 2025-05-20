@@ -3,3 +3,5 @@
 2- Documentação sobre traits: https://www.php.net/traits
 
 3- Documentação sobre namespaces: https://www.php.net/manual/en/language.namespaces.php
+
+4- Conceito de PSR em PHP: https://cursos.alura.com.br/extra/alura-mais/sobre-psrs-em-php-c66
