@@ -5,3 +5,9 @@
 3- Documentação sobre namespaces: https://www.php.net/manual/en/language.namespaces.php
 
 4- Conceito de PSR em PHP: https://cursos.alura.com.br/extra/alura-mais/sobre-psrs-em-php-c66
+
+5- Lista de excessões: https://www.php.net/manual/en/spl.exceptions.php
+
+6- Excessões pré definidas: https://www.php.net/manual/en/reserved.exceptions.php
+
+7- Funcionalidade do @override: https://wiki.php.net/rfc/marking_overriden_methods#semantics
